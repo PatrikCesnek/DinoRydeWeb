@@ -1,0 +1,180 @@
+/* ==========================================================================
+   DinoRyde - mount picker.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Mount picker: list on the left, the chosen mount's card on the right
+   -------------------------------------------------------------------------- */
+
+.picker {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.picker-list {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.picker-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  column-gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--frame);
+  border-radius: var(--radius-card);
+  background: var(--panel);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, transform 0.3s var(--ease);
+}
+
+.picker-item:hover {
+  transform: translateX(4px);
+}
+
+.picker-item.on {
+  border-color: var(--fern);
+  border-width: 1.5px;
+  background: var(--panel-soft);
+}
+
+.picker-dot {
+  display: flex;
+  grid-row: span 2;
+}
+
+.picker-dot i {
+  width: 16px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.picker-dot i:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.picker-dot i:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.picker-name {
+  color: var(--bone);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.picker-class {
+  grid-column: 2;
+  color: var(--earth);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.picker-item .badge {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.picker-card {
+  display: grid;
+  gap: 22px;
+  padding: 32px;
+  border: 1px solid var(--frame);
+  border-radius: 20px;
+  background:
+    radial-gradient(80% 60% at 100% 0%, rgba(232, 160, 64, 0.1), transparent 70%),
+    var(--panel);
+}
+
+.picker-card h3 {
+  margin: 8px 0 6px;
+  font-size: clamp(32px, 4vw, 46px);
+}
+
+.picker-tag {
+  color: var(--fern);
+  font-weight: 700;
+}
+
+.picker-specs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+
+.picker-specs div {
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--ink-deep);
+}
+
+.picker-specs dt {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.picker-specs dd {
+  margin: 6px 0 0;
+  color: var(--bone);
+  font-size: 26px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.picker-specs small {
+  margin-left: 3px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.picker-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.picker-note {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .picker {
+    grid-template-columns: 1fr;
+  }
+
+  .picker-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .picker-specs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .picker-list {
+    grid-template-columns: 1fr;
+  }
+
+  .picker-card {
+    padding: 22px;
+  }
+
+  .stat {
+    grid-template-columns: 90px minmax(0, 1fr);
+  }
+}
