@@ -11,7 +11,7 @@ import "./styles/pages.css";
 // Islands: each [data-island] element is replaced by a Vue component. The
 // markup inside it is the no-JS / crawler fallback.
 const islands = {
-  ride: () => import("./components/RideDemo.vue"),
+  ride: () => import("./components/HeroShots.vue"),
   mounts: () => import("./components/MountPicker.vue"),
   trails: () => import("./components/TrailPicker.vue"),
   skins: () => import("./components/SkinPicker.vue"),

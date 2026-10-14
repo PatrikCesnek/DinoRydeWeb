@@ -2,15 +2,10 @@
 import { computed } from "vue";
 import { mounts } from "../data.js";
 import { num, t } from "../i18n/index.js";
-import { reducedMotion, ride } from "../store.js";
+import { ride } from "../store.js";
 
 const current = computed(() => mounts.find((m) => m.id === ride.mount) || mounts[0]);
 const statKeys = ["speed", "power", "agility", "hop", "stamina"];
-
-function saddle() {
-  document.getElementById("top")?.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth" });
-  setTimeout(() => document.querySelector(".ride-stage")?.focus({ preventScroll: true }), 500);
-}
 
 function onKey(e, index) {
   const dir = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
@@ -84,7 +79,6 @@ function onKey(e, index) {
         </div>
 
         <div class="picker-actions">
-          <button type="button" class="btn btn-primary" @click="saddle">{{ t("mounts.saddle") }}</button>
           <p class="picker-note">{{ current.paid ? t("mounts.paidNote") : t("mounts.freeNote") }}</p>
         </div>
       </article>

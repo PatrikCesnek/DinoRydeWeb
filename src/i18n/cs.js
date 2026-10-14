@@ -25,22 +25,7 @@ export default {
 
   "hero.eyebrow": "iPhone · iPad · Mac",
   "hero.text": "Vyskoč do sedla a jezdi na skutečném dinosaurovi po klikaté lesní stezce. Přeřazuj chody jako na převodovce, přeskakuj padlé kmeny, proklouzni kolem stád a zjisti, jak daleko dojedeš.",
-  "hero.try": "Vyzkoušej si to přímo tady: drž VPŘED, chody měň klávesami Q a E, skákej mezerníkem.",
-
-  "ride.label": "Ukázka jízdy. W pro jízdu, S pro zpomalení, Q a E mění chod, mezerník je skok.",
-  "ride.breath": "Dech",
-  "ride.pts": "b",
-  "ride.hint": "Autojízda · stiskni jakékoli ovládání a převezmi otěže",
-  "ride.gaits": "Chody",
-  "ride.down": "Nižší chod",
-  "ride.up": "Vyšší chod",
-  "ride.jump": "Skok",
-  "ride.whoa": "Prr",
-  "ride.go": "Vpřed",
-  "ride.mount": "Dino",
-  "ride.toast.hop": "Kmen přes stezku +{points}",
-  "ride.toast.stumble": "Přeskakuj kmeny! Stiskni Skok těsně před kmenem.",
-  "ride.toast.collapsed": "Zkolabovalo. Zpomal dřív, než dojde dech.",
+  "hero.real": "Skutečná hra",
 
   "gait.walk": "Krok",
   "gait.halt": "Stůj",
@@ -84,7 +69,6 @@ export default {
   "mounts.stat.agility": "Obratnost",
   "mounts.stat.hop": "Skok",
   "mounts.stat.stamina": "Výdrž",
-  "mounts.saddle": "Vyzkoušej ho nahoře",
   "mounts.freeNote": "Zdarma od první jízdy.",
   "mounts.paidNote": "Jednorázový nákup v aplikaci. Koupíš jednou, máš ho na každém zařízení.",
 

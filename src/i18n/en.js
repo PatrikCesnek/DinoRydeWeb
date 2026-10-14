@@ -25,22 +25,7 @@ export default {
 
   "hero.eyebrow": "iPhone · iPad · Mac",
   "hero.text": "Climb into the saddle and ride a real dinosaur down a winding forest trail. Shift its gaits like a gearbox, hop the fallen logs, slip past the herds and see how far you get.",
-  "hero.try": "Try it right here: hold GO, shift with Q and E, hop with Space.",
-
-  "ride.label": "Ride demo. Hold W to go, S to rein in, Q and E to change gait, Space to hop.",
-  "ride.breath": "Breath",
-  "ride.pts": "pts",
-  "ride.hint": "Autoride · press any control to take the reins",
-  "ride.gaits": "Gaits",
-  "ride.down": "Lower gait",
-  "ride.up": "Higher gait",
-  "ride.jump": "Jump",
-  "ride.whoa": "Whoa",
-  "ride.go": "Go",
-  "ride.mount": "Mount",
-  "ride.toast.hop": "Trail-wide log +{points}",
-  "ride.toast.stumble": "Hop the logs! Press Jump just before one.",
-  "ride.toast.collapsed": "Collapsed. Ease off before the breath runs out.",
+  "hero.real": "Real gameplay",
 
   "gait.walk": "Walk",
   "gait.halt": "Halt",
@@ -84,7 +69,6 @@ export default {
   "mounts.stat.agility": "Agility",
   "mounts.stat.hop": "Hop",
   "mounts.stat.stamina": "Stamina",
-  "mounts.saddle": "Ride it above",
   "mounts.freeNote": "Free from the first ride.",
   "mounts.paidNote": "A one-time in-app purchase. Bought once, yours on every device.",
 
