@@ -1,0 +1,24 @@
+{
+  "name": "dinoryde-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Marketing and App Store support site for DinoRyde.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "node scripts/serve.mjs",
+    "preview": "npm run build && node scripts/serve.mjs",
+    "check": "node scripts/check-i18n.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^5.4.11"
+  }
+}
