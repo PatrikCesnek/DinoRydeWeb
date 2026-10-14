@@ -1,5 +1,5 @@
-// State shared between islands: picking a mount in the roster also saddles
-// it in the hero ride.
+// State shared between islands: the mount picked in the roster is the one
+// the skin preview names.
 import { reactive } from "vue";
 
 export const ride = reactive({ mount: "raptor" });

@@ -22,7 +22,7 @@ for (const page of ["index", "support", "privacy", "404"]) {
   const html = readFileSync(new URL(`../${page}.html`, import.meta.url), "utf8");
   for (const m of html.matchAll(/data-i18n(?:-html|-alt|-label)?="([^"]+)"/g)) used.add(m[1]);
 }
-for (const file of ["RideDemo", "MountPicker", "TrailPicker", "SkinPicker", "ScreenGallery"]) {
+for (const file of ["MountPicker", "TrailPicker", "SkinPicker", "ScreenGallery"]) {
   const src = readFileSync(new URL(`../src/components/${file}.vue`, import.meta.url), "utf8");
   for (const m of src.matchAll(/\bt\(["']([a-z][a-z0-9.]+)["']/gi)) used.add(m[1]);
 }
