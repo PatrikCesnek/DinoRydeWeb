@@ -1,0 +1,79 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows / Linux
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
+
+# Editors
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# Node / Vite
+node_modules/
+dist/
+dist-ssr/
+.vite/
+.cache/
+coverage/
+*.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.eslintcache
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Hosting CLIs
+.netlify/
+.vercel/
+.wrangler/
+.firebase/
+
+# Python helpers
+__pycache__/
+*.pyc
+
+# AI assistant files
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+GEMINI.md
+.claude-flow/
+claude-flow*
+.swarm/
+.hive-mind/
+.superpowers/
+/memory/
+/coordination/
+.mcp.json
+.ruflo/
+ruvector.db
+.aider*
+.cursor/
+.cursorrules
+.windsurf/
+.continue/
+.gemini/
+.codex/
+.github/copilot-instructions.md
+graphify-out/
+docs/superpowers/scratch/
